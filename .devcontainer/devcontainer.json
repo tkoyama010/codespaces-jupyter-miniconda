@@ -4,13 +4,16 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "updateContentCommand": "conda install -r requirements.txt -y",
   "postCreateCommand": "",
   "customizations": {
     "codespaces": {
       "openFiles": []
     },
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+      },
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python"
