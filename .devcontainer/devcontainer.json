@@ -4,7 +4,8 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "conda install --file requirements.txt -y",
+  "onCreateCommand": "./.devcontainer/oncreatecommand.sh",
+  "updateContentCommand": "",
   "postCreateCommand": "",
   "customizations": {
     "codespaces": {
