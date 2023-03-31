@@ -4,7 +4,8 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "bash .devcontainer/updatecontentcommand.sh",
+  "onCreateCommand": "bash .devcontainer/updatecontentcommand.sh",
+  "updateContentCommand": "",
   "postCreateCommand": "",
   "customizations": {
     "codespaces": {
